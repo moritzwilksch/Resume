@@ -1,0 +1,93 @@
+\documentclass[a4paper,11pt]{article}
+
+% ------------------ Imports ------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[none]{hyphenat} % no hyphenation for breaking lines
+\usepackage[notmath]{sansmathfonts}
+\usepackage{setspace}
+\usepackage[letterspace=-20]{microtype}
+\usepackage{fontawesome}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\input{glyphtounicode}
+\definecolor{themecolor}{HTML}{00305E}  % SET THEME COLOR HERE!
+
+
+
+% ------------------ Font Config ------------------
+\renewcommand{\familydefault}{\sfdefault}
+
+% ------------------ Page Layout ------------------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ------------------ Margins ------------------
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.0in}
+
+% ------------------ Generic Stuff ------------------
+\urlstyle{same}
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+\pdfgentounicode=1  % machine readability
+
+% ------------------ Sections Formatting ------------------
+\titleformat{\section}{\vspace{-5pt}\sffamily\scshape\Large\bfseries\color{themecolor}}{}{0em}{}[\color{themecolor}\titlerule\vspace{-5pt}]
+
+% ------------------ Custom Items ------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \bfseries{#1} & \bfseries{#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+% ========================================================================
+% ========================== Document Start ==============================
+% ========================================================================
+\begin{document}
+\lsstyle  % apply spacing option
+
+\input{latex/content.tex}
+
+% ------------------------------------
+\end{document}
