@@ -20,7 +20,10 @@
 \usepackage{graphicx}
 \usepackage[dvipsnames]{xcolor}
 \input{glyphtounicode}
-\definecolor{themecolor}{HTML}{00305E}  % SET THEME COLOR HERE!
+
+% -------------------------------------------------
+\input{latex/color_definition.tex}  % define color
+% -------------------------------------------------
 
 
 
@@ -51,33 +54,25 @@
 \titleformat{\section}{\vspace{-5pt}\sffamily\scshape\Large\bfseries\color{themecolor}}{}{0em}{}[\color{themecolor}\titlerule\vspace{-5pt}]
 
 % ------------------ Custom Items ------------------
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
 
-\newcommand{\resumeSubheading}[2]{
-  \vspace{-2pt}\item
+\newcommand{\resumeHeading}[2]{
+    \vspace{-2pt}\item
     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \bfseries{#1} & \bfseries{#2} \\
+        \bfseries{#1} & \bfseries{#2} \\
     \end{tabular*}\vspace{-7pt}
+    }
+    
+\newcommand{\resumeItem}[1]{
+    \item\small{
+    {#1 \vspace{-2pt}}
+    }
 }
 
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
 

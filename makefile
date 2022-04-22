@@ -4,4 +4,5 @@ compile_command:
 create: compile_command clean
 
 clean:
+	rm latex/*.aux latex/*.log latex/*.fls latex/*.fdb_latexmk
 	rm out/*.aux out/*.log out/*.out
