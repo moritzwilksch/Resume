@@ -18,6 +18,7 @@
 \usepackage[letterspace=-20]{microtype}
 \usepackage{fontawesome}
 \usepackage{graphicx}
+\usepackage[notmath]{sansmathfonts}
 \usepackage[dvipsnames]{xcolor}
 \input{glyphtounicode}
 
@@ -51,7 +52,7 @@
 \pdfgentounicode=1  % machine readability
 
 % ------------------ Sections Formatting ------------------
-\titleformat{\section}{\vspace{-5pt}\sffamily\scshape\Large\bfseries\color{themecolor}}{}{0em}{}[\color{themecolor}\titlerule\vspace{-5pt}]
+\titleformat{\section}{\vspace{-5pt}\sffamily\scshape\Large\bfseries\color{themecolor}}{}{0em}{}[\vspace{-1pt}\color{themecolor}\titlerule\vspace{-5pt}]
 
 % ------------------ Custom Items ------------------
 
@@ -75,6 +76,14 @@
 \newcommand{\resumeHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+% Center icons vertically in line
+\newcommand{\vcentericon}[1]{
+	\begingroup
+		\setbox0=\hbox{#1}
+		\parbox{\wd0}{\box0}
+	\endgroup
+}
 
 % ========================================================================
 % ========================== Document Start ==============================
