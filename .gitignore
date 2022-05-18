@@ -1,2 +1,4 @@
 assets/signature.eps
 assets/signature-eps-converted-to.pdf
+trash/*
+.vscode/settings.json
