@@ -15,12 +15,17 @@
 \usepackage[none]{hyphenat} % no hyphenation for breaking lines
 \usepackage[notmath]{sansmathfonts}
 \usepackage{setspace}
-\usepackage[letterspace=-20]{microtype}
+% \usepackage{microtype}
 \usepackage{fontawesome}
 \usepackage{graphicx}
-\usepackage[notmath]{sansmathfonts}
 \usepackage[dvipsnames]{xcolor}
 \input{glyphtounicode}
+% \usepackage{mathpazo}
+% \usepackage{charter}
+\usepackage[charter]{mathdesign}
+% \usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\setstretch{1.05}
 
 % -------------------------------------------------
 \input{latex/color_definition.tex}  % define color
@@ -29,7 +34,7 @@
 
 
 % ------------------ Font Config ------------------
-\renewcommand{\familydefault}{\sfdefault}
+% \renewcommand{\familydefault}{\sfdefault}
 
 % ------------------ Page Layout ------------------
 \pagestyle{fancy}
@@ -52,7 +57,7 @@
 \pdfgentounicode=1  % machine readability
 
 % ------------------ Sections Formatting ------------------
-\titleformat{\section}{\vspace{-5pt}\sffamily\scshape\Large\bfseries\color{themecolor}}{}{0em}{}[\vspace{-1pt}\color{themecolor}\titlerule\vspace{-5pt}]
+\titleformat{\section}{\vspace{-5pt}\scshape\Large\bfseries\color{themecolor}}{}{0em}{}[\vspace{-2pt}\color{themecolor}\titlerule\vspace{-5pt}]
 
 % ------------------ Custom Items ------------------
 
@@ -89,7 +94,7 @@
 % ========================== Document Start ==============================
 % ========================================================================
 \begin{document}
-\lsstyle  % apply spacing option
+% \lsstyle  % apply spacing option
 
 \input{latex/content.tex}
 
