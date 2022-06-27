@@ -24,6 +24,7 @@
 % \usepackage{charter}
 \usepackage[charter]{mathdesign}
 % \usepackage{lmodern}
+
 \usepackage[T1]{fontenc}
 \setstretch{1.05}
 \emergencystretch 3em
@@ -63,15 +64,15 @@
 % ------------------ Custom Items ------------------
 
 \newcommand{\resumeHeading}[2]{
-    \vspace{-2pt}\item
+    \vspace{-3pt}\item
     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \bfseries{#1} & \bfseries{#2} \\
-    \end{tabular*}\vspace{-7pt}
+        \bfseries{#1} & \bfseries{\small#2} \\
+    \end{tabular*}\vspace{-8pt}
     }
     
 \newcommand{\resumeItem}[1]{
     \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-4pt}}
     }
 }
 
@@ -81,7 +82,7 @@
 \newcommand{\resumeHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
 \newcommand{\resumeHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
 % Center icons vertically in line
 \newcommand{\vcentericon}[1]{
